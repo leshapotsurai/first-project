@@ -1,10 +1,24 @@
-" use strict";
+"use strict";
 
-/* const n1ame = "https://names";
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?","");
 
-console.log(`Write your name, ${n1ame}/5`);*/
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-const user = "Ivan";
-alert(`say your name, ${user}`);
+const a = prompt('Один из последних просмотренных фильмов?',""),
+      b = prompt('На сколько оцените его?',""),
+      c = prompt('Один из последних просмотренных фильмов?',""),
+      d = prompt('На сколько оцените его?',"");
+ 
+personalMovieDB.movies[a] = b;     
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
+
 
 
